@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About</title>
+	<link rel="stylesheet" href="about.css">
+	<script src="https://kit.fontawesome.com/12764a3beb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+	<div class="container">
+		<nav>
+			<img src="images/logo22.png" class="logo">
+			<ul>
+                <li><a href="./" target="_blank">Home</a></li>
+                <li><a href="./About" target="_blank">About</a></li>
+				<li><a href="./portfolio" target="_blank">Portfolio</a></li>
+				<li><a href="./contact" target="_blank">Contact</a></li>
+			</ul>
+            <input type="checkbox" id="cheak">
+            <label for="cheak" class="cheakbtn"><i class="fa-solid fa-bars"></i></label>
+		</nav>
+        <br>
+<div id="about">
+        <div class="container1">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/jerome.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p align="justify">Hi, my name is Jerome B. Lolong and I'm currently a 3rd Year Bachelor in Science Major in Information Technology in the famous Bicol University based in Daraga, Legazpi City. I've always been passionate about programming and technology since a young age and I love exploring and discovering new ideas, designs and knowledge about HTML topics that can help me make people's lives easier. In my free time, I enjoy playing pc and mobile games, listening to music trends, exploring new places while appreciating the scenery, and reading about new technology trends. I'm always looking for new challenges and opportunities to learn and grow as I continue this journey in the world of IT.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experiences</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+            <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Creating Simple Designs</span><br>Designing Web/App Interfaces</li>
+                        <li><span>Web Development</span><br>Web Designings & Simple Websites</li>
+                        <li><span>Hardware Skills</span><br>Simple Troubleshooting</li>
+                    </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Cashier</span><br>Had a year of experience being the cashier in a small convenience store.</li>
+                        <li><span>Market Vendor</span><br>A three years of experience being a vendor in a public market.</li>
+                        <li><span>PC Maintenance</span><br>Had a year of experience in PC troubleshooting.</li>
+                    </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Elementary</span><br>Studied at Sto. Domingo Central School</li>
+                        <li><span>High School</span><br>Studied at Sto. Domingo National High School</li>
+                        <li><span>College</span><br>Currently studying at Bicol University</li>
+                    </ul> 
+                </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+</script>
+</div>
+</div>
+<br>
+<br>
+<br>
+<footer>
+    <div class="container0">
+        <div class="footer-content">
+            <h3>Quick Links</h3>
+            <ul class="quick">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-content">
+        <h3>Visit Me</h3>
+        <ul class="social-icons">
+            <li><a href=""><i class="fab fa-facebook"></i></a></li>
+            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            <li><a href=""><i class="fab fa-github"></i></a></li>
+        </ul>
+        </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2023 Yom's Personal Website. All rights reserved.</p>
+        </div>
+</footer>
+</body>
+</html>
