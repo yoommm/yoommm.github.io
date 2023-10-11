@@ -219,7 +219,7 @@ html {
 	  font: 9px;
    }
    .Services-list{
-	  width: 100%;
+	  width: 1090px;
 	  display: grid;
 	  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	  grid-gap: 40px;
@@ -263,10 +263,12 @@ html {
 	  font-size: 30px;
    }
    .work-list{
+	  width: 1090px;
 	  display: grid;
 	  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	  grid-gap: 40px;
 	  margin-top: 50px;
+	  margin-bottom: 50px;
    }
    .work{
 	  border-radius: 10px;
@@ -334,10 +336,12 @@ html {
 	font-size: 30px;
  }
  .hobby-list{
+	width: 1090px;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	grid-gap: 40px;
 	margin-top: 50px;
+	margin-bottom: 50px;
  }
  .hobby{
 	border-radius: 10px;
