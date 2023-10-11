@@ -143,6 +143,7 @@ nav ul li a:hover::after{
     flex-basis: 35%;
  }
  .about-col-1 img{
+    height: 475px;
     border-radius: 15px;
  }
  .about-col-2{
