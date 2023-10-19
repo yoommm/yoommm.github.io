@@ -689,7 +689,8 @@ label {
 	font-size: 17px;
 }
 .sci{
-	margin-top: 10px;
+    font-size: 20px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
 
